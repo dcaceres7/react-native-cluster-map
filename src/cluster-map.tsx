@@ -74,8 +74,8 @@ export class ClusterMap extends React.PureComponent<
     this.mapRef.animateToRegion(region, duration);
   };
 
-  public fitToCoordinates = (coordinates: Array<LatLng>, options: object) => {
-    this.mapRef.fitToCoordinates(coordinates, {options});
+  public fitToCoordinates = (coordinates: Array<LatLng>, options: Object) => {
+    this.mapRef.fitToCoordinates(coordinates, options);
   };
 
   private generateMarkers(region: Region) {
