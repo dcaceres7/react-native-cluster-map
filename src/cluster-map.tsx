@@ -70,13 +70,13 @@ export class ClusterMap extends React.PureComponent<
     this.clusterize();
   }
 
-  public animateToRegion(region: Region, duration: number) {
+  public animateToRegion = (region: Region, duration: number) => {
     this.mapRef.animateToRegion(region, duration);
-  }
+  };
 
-  public fitToCoordinates(coordinates: Array<LatLng>, options: object) {
+  public fitToCoordinates = (coordinates: Array<LatLng>, options: object) => {
     this.mapRef.fitToCoordinates(coordinates, {options});
-  }
+  };
 
   private generateMarkers(region: Region) {
     const { markers, zoom } = clusterService.getClustersOptions(
